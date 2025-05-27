@@ -22,9 +22,6 @@ def read_blocks(filename):
         for block in raw_blocks
         if parse_block(block.strip().split("\n"))
     ]
-    print(raw_blocks[0].split("\n"))
-    print(raw_blocks[1].strip().split("\n"))
-    print(blocks)
     return blocks
 
 
