@@ -14,7 +14,7 @@ def parse_block(lines):
 
 def read_blocks(filename):
     """ファイルを読み込み、ブロックを抽出する"""
-    with open(filename, "r", encoding="GB2312") as file:
+    with open(filename, "r", encoding="GB2312", errors="ignore") as file:
         content = file.read().strip()
     raw_blocks = content.split("\n\n")
     blocks = [
